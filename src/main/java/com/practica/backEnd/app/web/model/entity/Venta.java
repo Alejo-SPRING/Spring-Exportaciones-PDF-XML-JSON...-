@@ -46,6 +46,14 @@ public class Venta implements Serializable {
 	@OneToMany(mappedBy = "ventaId")
 	private List<VentaHasProducto> listProductos;
 
+	public List<VentaHasProducto> getListProductos() {
+		return listProductos;
+	}
+
+	public void setListProductos(List<VentaHasProducto> listProductos) {
+		this.listProductos = listProductos;
+	}
+
 	public List<UsuarioHasVenta> getListVentas() {
 		return listVentas;
 	}
